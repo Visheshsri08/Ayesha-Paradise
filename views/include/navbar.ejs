@@ -1,0 +1,38 @@
+<nav class="nav navbar-expand-md">
+    <div class="logo"><img src="images/logo.png" alt="logo" height="100" width="170"></div>
+    <button id="menu" type="button" class="btn btn-outline-secondary" onclick="toggle()">☰ Menu</button>
+    <div class="topallopt">
+        <div class="Room bar">
+            <div><lord-icon src="https://cdn.lordicon.com/prslbulo.json" trigger="hover"
+                    style="width:50px;height:50px;"></lord-icon></div>
+            <div class="Text">Room</div>
+        </div>
+        <div class="Book bar">
+            <div><lord-icon src="https://cdn.lordicon.com/dznelzdk.json" trigger="hover"
+                    style="width:50px;height:50px"></lord-icon></div>
+            <div class="Text">Book a Flat cum PG</div>
+        </div>
+        <div class="Contact bar">
+            <div><img src="images/About Us.png" alt="User Icon" width="50"></div>
+            <div class="Text">About Us</div>
+        </div>
+        <div class="Login bar">
+            <div><lord-icon src="https://cdn.lordicon.com/hroklero.json" trigger="hover"
+                    style="width:50px;height:50px"></lord-icon></div>
+            <div class="Text">Login</div>
+        </div>
+    </div>
+
+    <script>
+        function toggle() {
+            var div = document.querySelector(".topallopt");
+            var currentDisplay = window.getComputedStyle(div).display;
+            if (currentDisplay == "none") {
+                div.style.display = "block";
+            }
+            else {
+                div.style.display = "none";
+            }
+        }
+    </script>
+</nav>
